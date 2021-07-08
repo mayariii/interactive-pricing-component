@@ -37,6 +37,20 @@ slider.addEventListener('input', (e) => {
 
 })
 
+// monthly / annual pricing toggle
+
+var toggle = document.querySelector('#toggleSwitch');
+var discount = document.querySelector('#discountLabel')
+var displayed = false;
+
+toggle.addEventListener('change', function () {
+  if (this.checked){
+    discount.classList.remove('not-displayed');
+  } else {
+    discount.classList.add('not-displayed');
+  }
+})
+
 
 
 

@@ -18,14 +18,28 @@ html {
      background-color: hsl(230, 100%, 99%);
 
      background: url(./images/bg-pattern.svg) no-repeat right top;
-     background-size: 100vw;
+     background-size: 100vw 50vh;
+ }
+
+ #hero {
+     display: flex;
+     align-content: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 20px;
+     height: 110px;
+     background: url(./images/pattern-circles.svg) no-repeat center;
+ }
+
+ .pricing-options {
+     display: flex;
+     align-content: center;
+     justify-content: center;
  }
 
  /* states */
 
- .not-displayed {
-     display: none;
- }
+ 
 
  .card-container {
      display: grid;
@@ -53,9 +67,30 @@ html {
  /* SWITCH SECTION */
 
  .switch-label {
-     display: inline-block;
+     padding: 0 15px;
+     font-size: 0.9rem;
  }
 
+ .anchor {
+     position: relative;
+ }
+ #discountLabel {
+     padding: 4px 0 0 0;
+     position: absolute;
+     left: 400px;
+     font-size: 0.75rem;
+ }
+
+ .not-displayed {
+     display: none;
+ }
+
+ #cta-btn {
+     height: 35px;
+     border-radius: 16px;
+     border: none;
+     outline: none;
+ }
 
  /* The switch - the box around the slider */
  .switch {

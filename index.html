@@ -8,12 +8,13 @@
     <title>Interactive Pricing Component</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=nicoleanalisecox.dev">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <section>
+    <section id="hero">
         <h1>Simple, traffic-based pricing</h1>
         <p>Sign-up for our 30-day trial. No credit card required.</p>
     </section>
@@ -22,24 +23,25 @@
             <p id="pageviews">10K PAGEVIEWS</p>
             <p><span id="price">$8.00</span>/ month</p>
 
-            <input type="range" min="0" max="4" value="0" class="range-slider grid-span-2" id="priceRange">
-
-            <div class="grid-span-2">
-            <p class="switch-label">Monthly Billing</p> 
+            <input type="range" min="0" max="4" value="0" class="range-slider grid-span-2" id="priceRange"/> 
+            <div
+                class="grid-span-2 pricing-options anchor">
+            <p class="switch-label">Monthly Billing</p>
             <label class="switch">
                 <input type="checkbox" id="toggleSwitch">
                 <span class="slider round"></span>
             </label>
-            <p class="switch-label">Yearly Billing</p>
-            <p class="switch-label" id="discountLabel">25% discount</p>
-            </div>
+            <p class="switch-label">Yearly Billing<p class="switch-label not-displayed" id="discountLabel">25% discount
+                </p>
+            </p>
+        </div>
 
-            <ul class="benefits">
-                <li><i class="fas fa-check bullet-decoration"></i> Unlimited websites</li>
-                <li><i class="fas fa-check bullet-decoration"></i> 100% data ownership</li>
-                <li><i class="fas fa-check bullet-decoration"></i> Email reports</li>
-            </ul>
-            <button>Start my trial</button>
+        <ul class="benefits">
+            <li><i class="fas fa-check bullet-decoration"></i> Unlimited websites</li>
+            <li><i class="fas fa-check bullet-decoration"></i> 100% data ownership</li>
+            <li><i class="fas fa-check bullet-decoration"></i> Email reports</li>
+        </ul>
+        <button id="cta-btn">Start my trial</button>
         </div>
     </main>
 
